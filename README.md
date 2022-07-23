@@ -28,8 +28,8 @@ Picture 1             |  Picture 2
 
 ### Links
 
-- Solution URL: [Frontend mentor solution link](https://your-solution-url.com)
-- Live Site URL: [Deployed site link](https://your-live-site-url.com)
+- Solution URL: [Frontend mentor solution link](https://www.frontendmentor.io/solutions/social-proof-section-made-with-html-and-css-aGObmHe75y)
+- Live Site URL: [Deployed site link](https://social-proof-section-new.netlify.app/)
 
 ## My process
 
