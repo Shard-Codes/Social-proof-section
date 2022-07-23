@@ -111,7 +111,7 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .social__info-left {
@@ -187,11 +187,11 @@ html {
 }
 
 .testimonial__box:nth-child(2) {
-  transform: translateY(20px);
+  transform: translateY(15px);
 }
 
 .testimonial__box:nth-child(3) {
-  transform: translateY(40px);
+  transform: translateY(35px);
 }
 
 .testimonial__info {
