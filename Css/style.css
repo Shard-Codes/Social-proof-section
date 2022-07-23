@@ -1,0 +1,288 @@
+/* ========================= Google fonts link - League Spartan ========================= */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/* ========================= Css variables ========================= */
+:root {
+  /* ============== Colors ============== */
+  /* Primary */
+  --clr-primary-900: hsl(300, 43%, 22%);
+  --clr-primary-200: hsl(333, 80%, 67%);
+
+  /* Neutral */
+  --clr-neutral-900: hsl(303, 10%, 53%);
+  --clr-neutral-200: hsl(300, 24%, 96%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  /* ============== Typography ============== */
+  /* Fonts */
+  --ff-body: 'League Spartan', sans-serif;
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Font sizes */
+  --fs-500: 3rem;
+  --fs-400: 1.75rem;
+  --fs-300: 1.5rem;
+  --fs-250: 1.25rem;
+  --fs-200: 1rem;
+  --fs-100: .913rem;
+}
+
+/* Responsive typography */
+@media (max-width: 38em) {
+  :root {
+    /* Font sizes */
+    --fs-500: 2rem;
+    --fs-400: 1.75rem;
+    --fs-300: 1.5rem;
+    --fs-250: 1.25rem;
+    --fs-200: 1rem;
+    --fs-100: .913rem;
+  }
+}
+
+/* ========================= Html reset ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================= Base styles ========================= */
+body {
+  min-height: 100vh;
+  background: var(--clr-neutral-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-body);
+  position: relative;
+  line-height: 1.1;
+}
+
+/* body::after {
+  background-image: url(../images/bg-pattern-top-desktop.svg);
+  width: 700px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+
+body::before {
+  background-image: url(../images/bg-pattern-bottom-desktop.svg);
+  width: 700px;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+} */
+
+
+html {
+  font-size: 100%;
+}
+
+/* ========================= Social proof section ========================= */
+.social__container {
+  max-width: 1128px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 1.5rem;
+}
+
+.social__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.social__info-left {
+  flex-basis: 35%;
+}
+.social__info-right {
+  flex-basis: 48%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.social__title {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1rem;
+  color: var(--clr-primary-900);
+}
+
+.social__description {
+  line-height: 1.6;
+  font-size: var(--fs-200);
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-900);
+}
+
+.social__info-box {
+  flex: 1;
+  background: var(--clr-neutral-200);
+  padding: 1.25rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__info-box:nth-child(2) {
+  transform: translate(20px);
+}
+
+.social__info-box:nth-child(3) {
+  transform: translate(40px);
+}
+
+.star__icons {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.social__info-title {
+  font-size: var(--fs-300);
+  color: var(--clr-primary-900);
+  font-weight: var(--fw-bold);
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.testimonials > * {
+  width: 100%;
+}
+
+.testimonial__box {
+  background: var(--clr-primary-900);
+  padding: 1.75rem;
+  border-radius: 10px;
+  color: var(--clr-neutral-100);
+}
+
+.testimonial__box:nth-child(2) {
+  transform: translateY(20px);
+}
+
+.testimonial__box:nth-child(3) {
+  transform: translateY(40px);
+}
+
+.testimonial__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  font-weight: var(--fw-medium);
+  margin-bottom: .25rem;
+  display: block;
+  font-size: var(--fs-250);
+}
+
+.testimonial__profession {
+  color: var(--clr-primary-200);
+  font-weight: var(--fw-regular);
+}
+
+.testimonial__text {
+  line-height: 1.6;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-200);
+}
+
+
+/* ========================= Media queries ========================= */
+/* 1104px wide */
+@media (max-width: 72em) {
+  .social__info-title {
+    font-size: var(--fs-250);
+    color: var(--clr-primary-900);
+    font-weight: var(--fw-bold);
+  }
+
+  .social__info-left,
+  .social__info-right {
+    flex-basis: 95%;
+    width: 95%;
+  }
+}
+
+/* 992px wide */
+@media (max-width: 62em) {
+  .social__info {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .social__info-box:nth-child(2) {
+    transform: translate(0);
+  }
+  
+  .social__info-box:nth-child(3) {
+    transform: translate(0);
+  }
+
+  .testimonial__box:nth-child(2) {
+    transform: translateY(0);
+  }
+  
+  .testimonial__box:nth-child(3) {
+    transform: translateY(0);
+  }
+}
+
+/* 608px wide */
+@media (max-width: 38em) {
+  .social__info-box {
+    flex-direction: column;
+    row-gap: .75rem;
+  }
+
+  .social__info-title {
+    font-size: var(--fs-200);
+  }
+
+  .social__info {
+    text-align: center;
+  }
+}
